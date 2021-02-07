@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Разработка сайтов и интернет-магазинов</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+  </head>
+
+  <body>
+    <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+				<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+			</symbol>
+			<symbol id="icon-longarrow" viewBox="0 0 54 24">
+				<title>longarrow</title>
+				<path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z" />
+			</symbol>
+			<symbol id="icon-navarrow" viewBox="0 0 408 408">
+				<title>navarrow</title>
+				<polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
+			</symbol>
+		</svg>
+    <!-- header -->
+    <div class="ripple-wrap">
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <div class="header-logo">
+              <a href="#"><img src="img/logo.svg" alt="" /></a>
+            </div>
+            <div class="header-nav">
+              <button id="mob" class="header-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__link">
+                <ul>
+                  <li><a data-target="portfolio" href="#">Портфолио</a></li>
+                  <li><a data-target="price" href="#">Цены</a></li>
+                  <li><a data-target="about" href="#">О нас</a></li>
+                  <li><a data-target="contact" href="#">Контакты</a></li>
+                  <li class="header__link-social">
+                    <!-- <a class="m-1" href=""><i class="fab fa-telegram-plane"></i></a>
+                                <a class="m-1" href=""><i class="fab fa-whatsapp"></i></a>
+                                <a class="m-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="m-1" href=""><i class="fab fa-viber"></i></a> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-desktoplink">
+              <ul>
+                <li><a data-target="portfolio" href="#">Портфолио</a></li>
+                <li><a data-target="price" href="#">Цены</a></li>
+                <li><a data-target="about" href="#">О нас</a></li>
+                <li><a data-target="contact" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    
+    <section class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-headline">
+              <h1>Разработка сайтов под ключ</h1>
+              <h5 class="text">Веб студия Doblo</h5>
+              <p>scroll down</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- main end-->
+
+    <!-- work-->
+    <section class="work" id="portfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="work-headline">Портфолио</h4>
+            <div class="work-content">
+              
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Pashmina Emporium</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://pashm.ru/" target="_blank"><img src="img/portfolio/pashmina.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/pashmina2.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Korea Box</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://korea-box.ru" target="_blank"><img src="img/portfolio/koreabox.JPG" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/koreaboxmob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Мой порт</h2>
+                        <h5>Корпоративный сайт</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://moyport.info/" target="_blank"><img src="img/portfolio/moiport.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/moiportmob2.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Giropilot</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://giropilot.ru/" target="_blank"><img src="img/portfolio/giropilot.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/giropilotmob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Reservinho</h2>
+                        <h5>Landing page</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="http://reservinho.com/ru/" target="_blank"><img src="img/portfolio/reservinho.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/reservmob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Binny</h2>
+                        <h5>Корпоративный сайт</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="http://binny.ru/" target="_blank"><img src="img/portfolio/binny.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/binnymob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work end -->
+
+
+
+   <!-- service -->
+
+   <section class="service" id="price">
+    <div class="slideshow">
+      <div class="slideshow__deco"></div>
+      <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/1.jpg);"></div>
+        </div>
+        <div class="slide__side">Memories &amp; Thoughts</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 10 тысяч рублей</span>
+          <h3 class="slide__title">Сайт визитка</h3>
+          <h4 class="slide__subtitle">Быстрый старт для вашего бизнеса</h4>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/2.jpg);"></div>
+        </div>
+        <div class="slide__side">Random Roam</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 10 тысяч рублей</span>
+          <h3 class="slide__title">Landing page</h3>
+          <h4 class="slide__subtitle">Эффективное привлечение клиентов</h4>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/3.jpg);"></div>
+        </div>
+        <div class="slide__side">Arbitrary Words</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 25 тысяч рублей</span>
+          <h3 class="slide__title">Интернет-магазин</h3>
+          <h4 class="slide__subtitle">Продавай в интернете</h4>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/4.jpg);"></div>
+        </div>
+        <div class="slide__side">Haunted Drift</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 25 тысяч рублей</span>
+          <h3 class="slide__title">Корпоративный сайт</h3>
+          <h4 class="slide__subtitle">Сайт для вашей компании</h4>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/5.jpg);"></div>
+        </div>
+        <div class="slide__side">Fun Diverge</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 20 тысяч рублей</span>
+          <h3 class="slide__title">Сайт каталог</h3>
+          <h4 class="slide__subtitle">Каталог товаров</h4>
+        </div>
+      </div>
+      <!-- <div class="slide">
+        <div class="slide__img-wrap">
+          <div class="slide__img" style="background-image: url(img/6.jpg);"></div>
+        </div>
+        <div class="slide__side">Hopes &amp; Dreams</div>
+        <div class="slide__title-wrap">
+          <span class="slide__number">от 5 тысчи рублей</span>
+          <h3 class="slide__title">Доработка сайта</h3>
+          <h4 class="slide__subtitle">This is unplanned it really just happens</h4>
+        </div>
+      </div> -->
+      <button class="nav nav--prev">
+        <svg class="icon icon--navarrow-prev">
+          <use xlink:href="#icon-navarrow"></use>
+        </svg>
+      </button>
+      <button class="nav nav--next">
+        <svg class="icon icon--navarrow-next">
+          <use xlink:href="#icon-navarrow"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="content">
+      <div class="content__item">
+        <span class="content__number">от 10 тысяч рублей</span>
+        <h3 class="content__title">Сайт визитка</h3>
+        <h4 class="content__subtitle">Срок создания: 2-7 дней</h4>
+        <div class="content__text">Сайт-визитка — небольшой сайт, как правило, состоящий из одной веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах, прейскуранты, контактные данные</div>
+      </div>
+      <div class="content__item">
+        <span class="content__number">от 10 тысяч рублей</span>
+        <h3 class="content__title">Landing page</h3>
+        <h4 class="content__subtitle">Срок создания: 2-7 дней</h4>
+        <div class="content__text">Целевая страница — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории</div>
+      </div>
+      <div class="content__item">
+        <span class="content__number">от 25 тысяч рублей</span>
+        <h3 class="content__title">Интернет магазин</h3>
+        <h4 class="content__subtitle">Срок создания: 14-30 дней</h4>
+        <div class="content__text">Интернет-магазин — сайт, торгующий товарами посредством сети Интернет. Позволяет пользователям онлайн, в своём браузере или через мобильное приложение, сформировать заказ на покупку, выбрать способ оплаты и доставки заказа, оплатить заказ</div>
+      </div>
+      <div class="content__item">
+        <span class="content__number">от 25 тысяч рублей</span>
+        <h3 class="content__title">Корпоративный сайт</h3>
+        <h4 class="content__subtitle">Срок создания: 14-30 дней</h4>
+        <div class="content__text">Корпоративный сайт – это сайт компании, ее официальное виртуальное представительство в интернете. Корпоративный сайт содержит полный объем информации о самой компании, о сфере ее деятельности, предлагаемой продукции и услугах. Часто на корпоративном сайте размещают каталог производимой продукции и дополнительные сервисы – форум, опросы, рассылки и тому подобное</div>
+      </div>
+      <div class="content__item">
+        <span class="content__number">от 20 тысяч рублей</span>
+        <h3 class="content__title">Сайт каталог</h3>
+        <h4 class="content__subtitle">Срок создания: 14-30 дней</h4>
+        <div class="content__text">Сайт-каталог – это сайт, который, кроме информации об организации, новостей, статей, ещё содержит каталог товаров (услуг). В каталоге каждый товар содержит подробное описание, основное и дополнительные изображения, характеристики.</div>
+      </div>
+      <!-- <div class="content__item">
+        <span class="content__number">от 5 тысяч рублей</span>
+        <h3 class="content__title">Доработка сайтов</h3>
+        <h4 class="content__subtitle">This is unplanned it really just happens</h4>
+        <div class="content__text">But we're not there yet, so we don't need to worry about it. Now let's put some happy little clouds in here. What the devil. A thin paint will stick to a thick paint. I'm going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Let's go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don't get carried away - we have plenty of time. Put your feelings into it, your heart, it's your world. These trees are so much fun. I get started on them and I have a hard time stopping.</div>
+      </div> -->
+      <button class="content__close">
+        <svg class="icon icon--longarrow">
+          <use xlink:href="#icon-longarrow"></use>
+        </svg>
+      </button>
+    </div>
+   </section>
+    <!-- service end-->
+
+    <!-- about us-->
+
+    <section class="about" id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xl-5">
+            <div class="about-counter">
+              <div class="about-counter-first">
+                <h5 class="timer active" id="cnt" data-to="150" data-speed="3000"></h5>
+                <p>Успешных проектов</p>
+              </div>
+              <div class="about-counter-second">
+                <h5 class="timer" id="cnt" data-to="100" data-speed="3000"></h5>
+                <p>Довольных клиентов</p>
+              </div>
+              <div class="about-counter-third">
+                <h5 class="timer" id="cnt" data-to="12" data-speed="3000"></h5>
+                <p>Лет в веб-разработке</p>
+              </div>
+              <div class="about-counter-fourth">
+                <h5 class="timer" id="cnt" data-to="7" data-speed="3000"></h5>
+                <p>Лет на рынке</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-7">
+            <div class="about-us">
+              <h5>Почему Вам стоить работать с нами?</h5>
+              <p>Ваш сайт - ваш самый ценный сотрудник. Он работает 24 часа в сутки, 7 дней в неделю, 365 дней в году, не требует выходных, не берет отпуск, не нуждается в заработной плате и льготах. Ваш веб-сайт - это лицо вашего бизнеса, и то, как он приветствует ваших посетителей, играет решающую роль. <br> <span>Обращаясь в нашу компанию, вы получаете следующие преимущества:</span></p>
+              <ul>
+                <li>Персональный менеджер</li>
+                <li>Уникальный дизайн</li>
+                <li>Валидная, кроссбраузерная и адаптивная верстка</li>
+                <li>Система управления содержимым сайта Wordpress</li>
+                <li>Наполнение сайта контентом</li>
+                <li>Базовая SEO оптимизация</li>
+                <li>Бесплатная поддержка сайта</li>
+                <li>Бесплатное обучение </li>
+              </ul>
+              <p>Все услуги предоставляются профессиональными разработчиками за умеренную плату!</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="contactus">
+      <div class="contactus-form">
+        <h5>Давайте обсудим ваш проект?</h5>
+        <p>Мы будем рады Вам помочь!</p>
+        <a href="mailto:support@webstudio.ru"><i class="fas fa-envelope"></i>support@webstudio.ru</a>
+        <a href="tel:0714683428"><i class="fas fa-phone-alt"></i>+38 071 468 34 28</a>
+        <a href="telegram:0501627907"><i class="fab fa-telegram-plane"></i>+38 050 162 79 07</a>
+        <a href="viber:0501627907"><i class="fab fa-viber"></i>+38 050 162 79 07</a>
+        <a href="whatsup:0501627907"><i class="fab fa-whatsapp"></i>+38 050 162 79 07</a>
+
+        <form action="">
+
+          <label for="fname"></label>
+          <input type="text" id="fname" name="firstname" placeholder="Имя">
+  
+          <label for="phone"></label>
+          <input type="number" id="phone" name="tphone" placeholder="Телефон">
+
+          <label for="massage"></label>
+          <input type="text" id="massage" name="amassage" placeholder="Сообщение">
+
+          <button type="submit" value="Submit">Отправить</button>
+        </form>
+        
+      </div>
+      <div class="contactus-map">
+        <p>Copyright © 2013 - 2020 Web Design & Development</p>
+      </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="contact__main">
+              <h2>Давайте обсудим ваш проект?</h2>
+              <p>Мы будем рады Вам помочь!</p>
+              <ul>
+                <li><a href="mailto:support@webstudio.ru"><i class="fas fa-envelope"></i>support@webstudio.ru</a></li>
+                <li><a href="tel:0714683428"><i class="fas fa-phone-alt"></i>+38 071 468 34 28</a></li>
+                <li><a href="telegram:0501627907"><i class="fab fa-telegram-plane"></i>+38 050 162 79 07</a></li>
+                <li><a href="viber:0501627907"><i class="fab fa-viber"></i>+38 050 162 79 07</a></li>
+                <li><a href="whatsup:0501627907"><i class="fab fa-whatsapp"></i>+38 050 162 79 07</a></li>
+              </ul>
+            </div>
+            <div class="contact__form">
+              <form action="">
+                <input type="text" id="fname" name="firstname" placeholder="Имя">
+                <input type="tel" id="phone" name="tphone" placeholder="Телефон">
+                <input type="text" id="message" name="message" placeholder="Сообщение">
+                <input type="submit" value="Отправить">
+              </form>
+            </div>
+            <p class="contact__copyright contact__copyright-mob">Copyright © 2013 - 2020 <br> Web Design & <br> Development</p>
+            <p class="contact__copyright contact__copyright-desk">Copyright © 2013 - 2020 Web Design & Development</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact__map"></div>
+    </section>
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
